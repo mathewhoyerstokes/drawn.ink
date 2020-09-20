@@ -1,0 +1,84 @@
+.btn-booking{
+    text-transform: uppercase;
+    border-radius: 50%;
+    padding: 10px 10px;
+    display: flex;
+    border: 3px solid black;
+    transition: all 0.5s ease;
+    width: 125px;
+    height: 125px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    
+ 
+    &:hover{
+        &:hover {
+            color: white;
+            background-color: #254f29 ;
+        }
+    }
+    &.green{
+        background-color: #254f29;
+        color: white;
+        transition: all 0.6s ease;
+            &:hover{
+                color: black;
+                background-color: white;
+            }
+    }
+   
+}
+
+button{
+    .slick-prev .slick-arrow,
+    .slick-next{
+        display: none !important;
+    }
+}
+
+
+.btn-primary{
+    background-color: transparent;
+    color: #000;
+
+    border: 3px solid black;
+}
+
+@media(max-width:500px){
+   .btn-outline{
+       width: 46%;
+   }
+}
+
+
+.artist-gallery-wrapper{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.btn-artist{
+    padding: 10px 30px;
+    color: $color-white;
+    border: 3px solid $color-white;
+    font-size: 28px;
+    border-radius: 10px;
+
+    &.black{
+        color: $color-black;
+        border: solid 3px $color-black;
+    }
+    &.small{
+        padding: 5px 15px;
+    }
+
+    &.white{
+        color: $color-white;
+        border: 3px solid $color-white;
+    }
+
+    @media(max-width:500px){
+        margin-bottom: 20px;
+        padding: 5px 15px;
+    }
+}
